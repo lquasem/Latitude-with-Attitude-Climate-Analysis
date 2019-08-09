@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>   
+<body>
+    <!-- <nav class="navbar navbar-primary"> -->
+            <nav class="navbar navbar-light bg-success sticky-top"> 
+                   
+                      
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand"href="index.html"        >Latitude</a>
+                      </div>
+                    
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link" href="Summary2.html">Comparison</a></li> 
+                        <li><a class="nav-link" href="cities_data.html">Data</a></li> 
+                        <li><a class="nav-link" href="https://eden.uktv.co.uk/nature/earth/article/equator-facts/">Fun Facts</a></li>
+                        </li>
+                            <div class="Plots">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="humidity.html">Humidity</a></li>
+                                      <li><a href="cloudiness.html">Cloudiness</a></li>
+                                      <li><a href="wind_speed.html">Wind Speed</a></li>
+                                      <li><a href="max_temp.html">Max Temp</a></li>
+                        
+                        
+                      </ul>
+                      
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                  </nav>
+    
+                </div>
+
+    <div class="container">
+            <h1>Latitude with Attitude</h1>
+
+            <div class="row">
+                    <div class="col-md-4 col-xs-6">
+                      <img src="equatorsign.png" alt="Global map"style='max-width: 100%'/>
+                    </div>
+                
+           
+      
+                    <div class="col-md-4 col-xs-6">
+                       
+                        <p>Does it really get hotter when we get closer to the equator?</p>
+                        <p> We have created a visualization dashboard website using visualizations plotting weather data,
+                        in order to analyze how weather changes as you get closer to the equator. To accomplish this analysis, data was pulled from the OpenWeatherMap API to create a dataset for over 500 cities.
+                        A variety of different factors were compared to Latitude. For this website we have demostrated 4 individual pages for 4 different plots: 
+                            <br>
+                            1)	City Latitude vs Humidity
+                            <br>
+                            2)	City Latitude vs Cloudiness
+                            <br>
+                            3)	City Latitude vs Wind Speed
+                            <br>
+                            4)	City Latitude vs Max Temperature
+                            <br>
+                        </p>   Each plot has its own page explaining the date. There is also a comparison page where we can see a comparison of all of the plots, and another page where we can view the data used to build them. 
+                           
+                          
+                        </div>
+                        
+                 
+            
+
+                        <div class="col-md-4 col-xs-4 ">
+                                 
+                                <h2 class="text-center">Data visualization Dashboard:</h2> 
+                              
+                        <div class="panel panel-vertical bg-light" >
+                                <div class="panel-body data-spy=affix">
+               
+                          <div class = "thumbnail">                               
+                         <div class="btn-group"> 
+                                <div class="button">
+                                    <button type="button"> 
+                                            <a href="max_temp.html"><img class="img-responsive" src="Fig1.png" alt="Latitude vs Max temp" style='max-width: 200px'></a>
+                                        
+                                        </p> 
+                                    </button>
+                            <button type="button">
+                                    <a href = "humidity.html"><img class="img-responsive" src="Fig2.png" alt="Latitude vs Humidity"style='max-width: 200px'></a>                  
+                                
+                            </p>    
+                            </button>
+              
+                        </div>
+              
+                        <div class="button">
+                            <button type="button">
+                                    <a href = "cloudiness.html"><img class="img-responsive" src="Fig3.png" alt="Latitude vs Cloudiness"style='max-width: 200px'></p>
+                                
+                            </p>
+                            </button>
+
+                            <button type="button">
+                                    <a href = "wind_speed.html"><img class="img-responsive" src="Fig4.png" alt="Latitude vs Wind Speed"style='max-width: 200px'></a>
+                                   
+                                 
+                                </p>
+                                
+                                        
+                                           
+                                        
+                            </button>
+                         </div>
+
+                                
+                       
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <style>
+                    
+                         /* Set the background color  */
+                        body {
+                        background-color: rgb(236, 229, 219);
+                        }
+
+                        /* On screens that are 992px or less, set the background color  */
+                        @media screen and (max-width: 992px) {
+                        body {
+                            background-color: gray;
+                        }
+                        }
+
+                        /* On screens that are 600px or less, set the background color  */
+                        @media screen and (max-width: 600px) {
+                        body {
+                            background-color: rgb(236, 212, 212);
+                        }
+                        }
+
+                        </style>
+<body>
+        </html>
